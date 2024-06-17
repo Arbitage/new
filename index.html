@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankan Mukherjee's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style> 
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header .logo {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+    padding-top: 200px;
+    background: url('xxx.jpg') no-repeat center center/cover;
+    opacity: 0.5; /* Adjust opacity as needed */
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+
+#hero .hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+#hero .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#hero .social-links a:hover {
+    color: #e8491d;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #e8491d;
+}
+
+section p, section ul {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1.5s ease-in;
+}
+
+.slide-in-left {
+    animation: slideInLeft 1.5s ease-in;
+}
+
+.slide-in-right {
+    animation: slideInRight 1.5s ease-in;
+}
+
+.bounce-in {
+    animation: bounceIn 1.5s ease-in;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+ </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1 class="logo">Ankan Mukherjee</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h1 class="fade-in">Hello, I'm Ankan Mukherjee</h1>
+                <p class="slide-in-left">I am a recent graduate with a B.Tech in Computer Science and Engineering from Techno India University. I have a strong foundation in programming languages like C, C++, and Python, as well as web development technologies such as HTML, CSS, and JavaScript.I am also proficient in OOPS and Dbms,OS also I have also gained valuable experience in machine learning through my internship at Codeway Solutions, where I worked on projects using data-driven insights to develop innovative solutions. I am a quick learner and possess strong problem-solving abilities, as evidenced by my achievements like winning the Tech Quiz Champion at my university. My skills in communication and teamwork were honed during my internship at Cognify Technologies, where I contributed to agile software development projects. I am enthusiastic about pursuing a career in software development and am eager to contribute to a team's success.</p>
+                <div class="social-links bounce-in">
+                    <a href="https://www.linkedin.com/in/ankan-mukherjee-449206258/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Arbitage"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="fade-in">About Me</h2>
+            <p class="slide-in-right">As a CSE student with a strong foundation in software development,Web Development, Data Science and Database  and a passion for new technologies, I am eager to apply my skills and knowledge to real-world projects. I have a comprehensive understanding of programming languages such as C, C++,Python , and experience with web technologies like HTML, CSS, and JavaScript.I am also proficient in OOPS AND DBMS(SQL) concepts. My academic projects and internships have equipped me with practical experience in developing innovative solutions and working effectively in team environments. I am enthusiastic about continuously learning and growing in the tech industry, and I am excited to contribute to impactful projects that make a difference.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="fade-in">My Services</h2>
+            <ul>
+                <li class="fade-in">Software Development</li>
+                <li class="fade-in">Web Development</li>
+                <li class="fade-in">Data Science</li>
+                <li class="fade-in">Machine Learning</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="fade-in">Projects</h2>
+            <ul>
+                <li class="slide-in-left"><a href="https://github.com/Arbitage/Cancer-cell-growth-estimation-prediction-using-Machine-learning">Cancer Cell Growth Estimation and Prediction using Machine Learning</a><br>
+                Applied machine learning to predict and estimate cancer cell growth rates for enhanced treatment strategies.</li>
+                <li class="slide-in-left"><a href="https://github.com/Arbitage/TEXT-TO-SPEECH-CONVERTER-project">Text to Speech Converter Website</a><br>
+                Designed a Text-to-speech converter application using HTML, CSS, and JavaScript. Users can input text and the application converts it into audio speech.</li>
+                <li class="slide-in-left"><a href="https://github.com/Arbitage/-E--COMMERCE-SHOPPING-Website">E-commerce Shopping Website</a><br>
+                Designed and developed an online shopping website using HTML, CSS, and JavaScript, providing a seamless shopping experience with interactive features.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="fade-in">Work Experience</h2>
+            <ul>
+                <li class="slide-in-right"><strong>Software Development Intern at Cognify Technologies</strong> (April 2024 - June 2024)<br>
+                Contributed to agile software development projects, enhancing team efficiency and delivering scalable solutions while gaining practical experience in full-stack development.</li>
+                <li class="slide-in-right"><strong>Web Developer Intern at Octanet Services Pvt Ltd.</strong> (Jan 2024 - Feb 2024)<br>
+                Collaborated on web development initiatives, honing front-end and back-end skills to craft dynamic, user-centric experiences within an agile team environment.</li>
+                <li class="slide-in-right"><strong>Machine Learning Intern at Codeway Solutions</strong> (Feb 2024 - March 2024)<br>
+                Engaged in machine learning projects, leveraging data-driven insights to develop innovative solutions, and advancing proficiency in algorithms, model development, and deployment strategies.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="fade-in">Education</h2>
+            <ul>
+                <li class="fade-in"><strong>TECHNO INDIA UNIVERSITY</strong> 2024<br>
+                B.Tech in Computer Science & Engineering (CSE)</li>
+                <li class="fade-in"><strong>NAVA NALANDA HIGH SCHOOL</strong> 2020<br>
+                Class 12th</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="container">
+            <h2 class="fade-in">Activities & Achievements</h2>
+            <ul>
+                <li class="slide-in-left">Volunteer of the Year: Acknowledgment for volunteer work in organizing a robotics workshop.</li>
+                <li class="slide-in-left">Tech Quiz Champion: Won 1st place as a team at tech quiz event out of 10 teams in total in tech fest.</li>
+                <li class="slide-in-left">Solved 100+ coding problems on Geeks for Geeks.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="fade-in">Contact Me</h2>
+            <p class="slide-in-right">Phone: +91 9123048693</p>
+            <p class="slide-in-right">Email: <a href="mailto:ankanmukherjee0218@gmail.com">ankanmukherjee0218@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ankan Mukherjee. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script >
+// Adding scroll animation
+const faders = document.querySelectorAll('.fade-in');
+const slidersLeft = document.querySelectorAll('.slide-in-left');
+const slidersRight = document.querySelectorAll('.slide-in-right');
+const bouncers = document.querySelectorAll('.bounce-in');
+
+const appearOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -100px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+        }
+    });
+}, appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
+
+slidersLeft.forEach(slider => {
+    appearOnScroll.observe(slider);
+});
+
+slidersRight.forEach(slider => {
+    appearOnScroll.observe(slider);
+});
+
+bouncers.forEach(bouncer => {
+    appearOnScroll.observe(bouncer);
+});
+
+</script>
+</body>
+</html>
+
+
